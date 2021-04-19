@@ -1,8 +1,12 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
+
+import logo from "../../assets/logo.png";
 
 export const Navbar = () => {
   return (
     <nav>
+      <img src={logo} alt="" />
+
       <ul>
         <li>
           <Link
