@@ -1,0 +1,44 @@
+.about-header {
+  display: flex;
+
+  .carousel-root {
+    margin-top: 6.5em;
+    width: calc(60vw - 2em);
+
+    .carousel-slider {
+      border-radius: 1em 0 1em 1em;
+    }
+
+    .slider-wrapper {
+      height: 50vh;
+
+      ul {
+        height: 100%;
+      }
+    }
+
+    .slide > div,
+    .slide img {
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    height: 40vh;
+    width: calc(40vw - 2em);
+    background-color: $secondary-color;
+    margin-top: 6.5em;
+    border-radius: 0 1em 1em 0;
+    padding: 2em;
+    color: $white;
+
+    h4 {
+      font-size: 1.8rem;
+      margin-bottom: 1em;
+    }
+  }
+}

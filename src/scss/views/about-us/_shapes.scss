@@ -1,0 +1,12 @@
+.shapes {
+  height: 35vh;
+  margin: auto 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 35vh;
+    border-radius: 1em;
+    object-fit: cover;
+  }
+}

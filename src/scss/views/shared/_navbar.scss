@@ -1,0 +1,64 @@
+nav {
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+  margin-top: 2em;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60vw;
+    background-color: $primary-color;
+    color: $white;
+    border-radius: 5em;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      height: 2.5em;
+      flex-grow: 1;
+      text-align: center;
+      text-transform: uppercase;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        text-transform: uppercase;
+        height: 100%;
+        width: 100%;
+      }
+
+      &:first-child {
+        border-radius: 5em 0 0 5em;
+
+        a {
+          border-radius: 5em 0 0 5em;
+        }
+      }
+      &:last-child {
+        border-radius: 0 5em 5em 0;
+
+        a {
+          border-radius: 0 5em 5em 0;
+        }
+      }
+
+      &:hover {
+        background-color: $tertiary-color;
+        transition-duration: 0.3s;
+      }
+    }
+
+    .active {
+      background-color: $tertiary-color;
+      transition-duration: 0.3s;
+    }
+  }
+}
