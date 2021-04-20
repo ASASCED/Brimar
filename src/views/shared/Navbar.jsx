@@ -14,7 +14,7 @@ export const Navbar = () => {
             to="home"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-15}
             duration={500}
           >
             inicio
@@ -26,7 +26,7 @@ export const Navbar = () => {
             to="main"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-15}
             duration={500}
           >
             productos
@@ -38,7 +38,7 @@ export const Navbar = () => {
             to="news"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-15}
             duration={500}
           >
             noticias
@@ -50,7 +50,7 @@ export const Navbar = () => {
             to="about"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-15}
             duration={500}
           >
             nosotros

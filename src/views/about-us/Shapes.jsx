@@ -1,4 +1,4 @@
-import mask from "../../assets/img/mask.jpg";
+import mask from "../../assets/img/mask.png";
 
 export const Shapes = () => {
   return (

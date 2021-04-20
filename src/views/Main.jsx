@@ -8,7 +8,7 @@ import { Footer } from "./shared/Footer";
 
 export const Main = () => {
   return (
-    <div className="main">
+    <div className="main animate__animated animate__fadeIn">
       <Navbar />
       <Home />
       <AboutHeader />

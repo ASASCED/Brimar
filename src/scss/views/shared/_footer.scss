@@ -5,4 +5,9 @@ footer {
   justify-content: center;
   background-color: $primary-color;
   color: $white;
+
+  span:last-child:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }

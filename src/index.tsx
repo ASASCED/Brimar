@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
-import { Main } from "./views/Main";
+import { AppRouter } from "./routes/AppRouter";
 
 import "./scss/index.scss";
 
-ReactDOM.render(<Main />, document.getElementById("root"));
+ReactDOM.render(<AppRouter />, document.getElementById("root"));
