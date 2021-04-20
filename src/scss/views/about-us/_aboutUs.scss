@@ -21,10 +21,50 @@
   }
 
   & > div:last-child {
-    padding: 2em;
+    position: relative;
+    overflow-x: hidden;
 
-    h5 {
-      text-align: center;
+    .info {
+      padding: 2em;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 2em;
+      position: absolute;
+      bottom: 0;
+      height: 6vh;
+      background-color: $primary-color;
+
+      a {
+        margin: auto auto;
+      }
+
+      i {
+        font-size: 1.8rem;
+        padding: 0em 1em;
+        cursor: pointer;
+        margin: auto auto;
+        color: $white;
+      }
+
+      a:first-child i:hover {
+        color: #e3003a;
+        transition-duration: 0.3s;
+      }
+
+      a:nth-child(2) i:hover {
+        color: #4866ab;
+        transition-duration: 0.3s;
+      }
+
+      a:last-child i:hover {
+        color: #00a2f5;
+        transition-duration: 0.3s;
+      }
     }
   }
 

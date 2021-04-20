@@ -81,18 +81,44 @@ export const AboutUs = () => {
         </div>
       </div>
       <div className="about-us__container">
-        <h5>Contacto</h5>
-        <p>Correo: contacto@brimarsuministros.com</p>
-        <p>Cel: 5588483527</p>
-        <p>Tel: 5571599498</p>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.google.com/maps/@19.6025175,-99.2344892,3a,75y,103.42h,82.31t/data=!3m6!1e1!3m4!1sRMOg_n48c4B2UhC9S0xCNg!2e0!7i13312!8i6656"
-        >
-          Calle del Zenzontle Mz:19 Lote 19 Col. Lomas de San Miguel, Atizapán
-          de Zaragoza, 52928
-        </a>
+        <div className="info">
+          <h5>Contacto</h5>
+          <p>Correo: contacto@brimarsuministros.com</p>
+          <p>Cel: 5588483527</p>
+          <p>Tel: 5571599498</p>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.google.com/maps/@19.6025175,-99.2344892,3a,75y,103.42h,82.31t/data=!3m6!1e1!3m4!1sRMOg_n48c4B2UhC9S0xCNg!2e0!7i13312!8i6656"
+          >
+            Calle del Zenzontle Mz:19 Lote 19 Col. Lomas de San Miguel, Atizapán
+            de Zaragoza, 52928
+          </a>
+        </div>
+
+        <div className="social">
+          <a
+            href="https://www.instagram.com/brimarsuministros/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/Brimar-Suministros-Medicos-SA-de-CV-107889634770488"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://twitter.com/BrimarSuminist1"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </div>
       </div>
     </div>
   );
