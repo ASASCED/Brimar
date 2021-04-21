@@ -1,6 +1,7 @@
 import mision from "../../assets/about-us/mision.jpeg";
 import vision from "../../assets/about-us/vision.jpeg";
 import valores from "../../assets/about-us/valores.jpeg";
+import map from "../../assets/img/map.jpeg";
 
 export const AboutUs = () => {
   return (
@@ -95,6 +96,8 @@ export const AboutUs = () => {
             de Zaragoza, 52928
           </a>
         </div>
+
+	<img src={map} alt="map" />
 
         <div className="social">
           <a
