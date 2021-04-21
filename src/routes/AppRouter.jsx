@@ -7,7 +7,7 @@ import { Privacity } from "../views/privacity/Privacity";
 export function AppRouter() {
   return (
     <Router>
-      <div>
+      <div style={{overflowX: 'hidden'}}>
         <Switch>
           <Route exact path="/" component={Main} />
           <Route exact path="/privacity" component={Privacity} />
