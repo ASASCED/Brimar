@@ -1,16 +1,29 @@
+$sm-m-top: 12em;
+$md-m-top: 6.5em;
+
 .about-header {
   display: flex;
 
   .carousel-root {
-    margin-top: 6.5em;
     width: calc(60vw - 2em);
+    display: none;
+
+    @include media(md) {
+      display: block;
+      margin-top: $md-m-top;
+    }
+
+    @include media(lg) {
+      display: block;
+      margin-top: $md-m-top;
+    }
 
     .carousel-slider {
       border-radius: 1em 0 1em 1em;
     }
 
     .slider-wrapper {
-      height: 50vh;
+      height: 40vh;
 
       ul {
         height: 100%;
@@ -28,13 +41,27 @@
   }
 
   &__info {
-    height: 40vh;
-    width: calc(40vw - 2em);
+    height: 35vh;
     background-color: $secondary-color;
-    margin-top: 6.5em;
-    border-radius: 0 1em 1em 0;
-    padding: 2em;
+    margin-top: $sm-m-top;
     color: $white;
+    width: 100%;
+    border-radius: 1em;
+    padding: 1em;
+
+    @include media(md) {
+      padding: 2em;
+      border-radius: 0 1em 1em 0;
+      width: calc(40vw - 2em);
+      margin-top: $md-m-top;
+    }
+
+    @include media(lg) {
+      padding: 2em;
+      border-radius: 0 1em 1em 0;
+      width: calc(40vw - 2em);
+      margin-top: $md-m-top;
+    }
 
     h4 {
       font-size: 1.8rem;

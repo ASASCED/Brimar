@@ -97,7 +97,7 @@ export const AboutUs = () => {
           </a>
         </div>
 
-	<img src={map} alt="map" />
+        <img src={map} alt="map" />
 
         <div className="social">
           <a
@@ -105,21 +105,21 @@ export const AboutUs = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fab fa-instagram"></i>
+            <i className="fab fa-instagram"></i>
           </a>
           <a
             href="https://www.facebook.com/Brimar-Suministros-Medicos-SA-de-CV-107889634770488"
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fab fa-facebook"></i>
+            <i className="fab fa-facebook"></i>
           </a>
           <a
             href="https://twitter.com/BrimarSuminist1"
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fab fa-twitter-square"></i>
+            <i className="fab fa-twitter-square"></i>
           </a>
         </div>
       </div>

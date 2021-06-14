@@ -5,8 +5,9 @@ import logo from "../../assets/logo.png";
 export const Navbar = () => {
   return (
     <nav>
-      <img src={logo} alt="" />
-
+      <figure>
+        <img src={logo} alt="brimar-img" />
+      </figure>
       <ul>
         <li>
           <Link

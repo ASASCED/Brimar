@@ -8,8 +8,8 @@ export const Privacity = () => {
   return (
     <div className="privacity animate__animated animate__fadeIn">
       <div className="privacity__top">
-        <i onClick={() => history.push("/")} class="fas fa-arrow-left"></i>Aviso
-        de Privacidad
+        <i onClick={() => history.push("/")} className="fas fa-arrow-left"></i>
+        Aviso de Privacidad
       </div>
       <div className="privacity__section">
         <h4>Aviso de privacidad integral</h4>

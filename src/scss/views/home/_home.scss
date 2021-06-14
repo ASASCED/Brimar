@@ -1,21 +1,55 @@
 .home {
   &__info {
-    position: absolute;
-    width: 30vw;
-    top: 50%;
-    left: 20vw;
-    transform: translate(-50%, -50%);
-    color: white;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10em;
+    border-radius: 0.4em;
+    background-color: white;
+    padding: 1em;
+    color: black;
+    text-align: center;
+
+    @include media(sm) {
+      background-color: transparent;
+      color: white;
+      text-align: start;
+      position: absolute;
+      top: 40%;
+      left: 50vw;
+      transform: translate(-50%, -50%);
+    }
+
+    @include media(md) {
+      background-color: transparent;
+      color: white;
+      text-align: start;
+      position: absolute;
+      top: 40%;
+      left: 30vw;
+      transform: translate(-50%, -50%);
+      width: 40%;
+    }
+
+    @include media(lg) {
+      background-color: transparent;
+      color: white;
+      text-align: start;
+      position: absolute;
+      top: 40%;
+      left: 20vw;
+      transform: translate(-50%, -50%);
+      width: 40%;
+    }
 
     h2 {
-      font-size: 3rem;
+      font-size: calc(1rem + 2vw);
       margin-bottom: 0.5em;
       font-family: "Nanum Myeongjo", serif;
       font-weight: bold;
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: calc(0.5rem + 2vw);
       font-family: "Nanum Myeongjo", serif;
     }
   }
