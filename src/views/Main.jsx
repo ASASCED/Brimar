@@ -6,6 +6,8 @@ import { Navbar } from "./shared/Navbar";
 import { AboutUs } from "./about-us/AboutUs";
 import { Footer } from "./shared/Footer";
 
+import MessengerCustomerChat from "react-messenger-customer-chat";
+
 export const Main = () => {
   return (
     <div className="main animate__animated animate__fadeIn">
@@ -16,6 +18,8 @@ export const Main = () => {
       <News />
       <AboutUs />
       <Footer />
+
+      <MessengerCustomerChat pageId="101455912198716" appId="160936549419460" />
     </div>
   );
 };
