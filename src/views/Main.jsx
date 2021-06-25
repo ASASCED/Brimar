@@ -19,7 +19,11 @@ export const Main = () => {
       <AboutUs />
       <Footer />
 
-      <MessengerCustomerChat pageId="107889634770488" appId="544514809929470" />
+      <MessengerCustomerChat
+        pageId="107889634770488"
+        appId="544514809929470"
+        language="es_ES"
+      />
     </div>
   );
 };
