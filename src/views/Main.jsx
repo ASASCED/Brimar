@@ -27,6 +27,9 @@ export const Main = () => {
         appId="544514809929470"
         language="es_ES"
         minimized={false}
+        shouldShowDialog={true}
+        greetingDialogDisplay="show"
+        autoLogAppEvents={true}
       />
     </div>
   );
