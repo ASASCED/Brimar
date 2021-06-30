@@ -12,7 +12,7 @@
   max-width: 100vw;
   background-color: $quaternary-color;
 
-  & > div:not(.home) {
+  & > div:not(.home):not(.float-message) {
     padding: 0 2em;
   }
 
@@ -34,5 +34,44 @@
 
   .about-us {
     grid-area: about;
+  }
+
+  .float-message {
+    position: fixed;
+    right: 15em;
+    bottom: 0.5em;
+    display: flex;
+    background-color: white;
+    width: 25em;
+    padding: 1em 2em;
+    border-radius: 0.2em;
+
+    button {
+      height: 2em;
+      width: 2em;
+      background-color: $senary-color;
+      color: white;
+      font-weight: bold;
+      border-radius: 0.2em;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($color: $senary-color, $amount: 20);
+        transition-duration: 0.3s;
+      }
+    }
+
+    &:before {
+      content: " ";
+      width: 0;
+      height: 0;
+      display: block;
+      position: absolute;
+      right: -1em;
+      bottom: 2em;
+      border-top: 1em solid transparent;
+      border-bottom: 1em solid transparent;
+      border-left: 1em solid white;
+    }
   }
 }
