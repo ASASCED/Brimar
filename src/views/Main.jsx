@@ -26,6 +26,7 @@ export const Main = () => {
         pageId="107889634770488"
         appId="544514809929470"
         language="es_ES"
+        minimized={false}
       />
     </div>
   );
