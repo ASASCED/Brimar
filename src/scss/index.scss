@@ -14,3 +14,7 @@
 @import "views/shared/footer";
 @import "views/news/news";
 @import "views/privacity/privacity";
+
+.main > div:nth-last-child(2) > div:last-child {
+  margin-right: 4em;
+}

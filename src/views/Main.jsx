@@ -7,6 +7,8 @@ import { AboutUs } from "./about-us/AboutUs";
 import { Footer } from "./shared/Footer";
 
 import MessengerCustomerChat from "react-messenger-customer-chat";
+import WhatsAppWidget from "react-whatsapp-widget";
+import "react-whatsapp-widget/dist/index.css";
 
 export const Main = () => {
   return (
@@ -19,6 +21,7 @@ export const Main = () => {
       <AboutUs />
       <Footer />
 
+      <WhatsAppWidget phoneNumber="+5215548250892" />
       <MessengerCustomerChat
         pageId="107889634770488"
         appId="544514809929470"
