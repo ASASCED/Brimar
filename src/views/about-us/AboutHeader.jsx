@@ -33,6 +33,12 @@ export const AboutHeader = () => {
         <div>
           <img alt="img05" src={img05} />
         </div>
+        <div>
+          <img alt="img04" src={img04} />
+        </div>
+        <div>
+          <img alt="img05" src={img05} />
+        </div>
       </Carousel>
       <div className="about-header__info">
         <h4>Descripcion</h4>

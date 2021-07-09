@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import video from "../../assets/video.mp4";
 
 export const News = () => {
   const [identifier, setIdentifier] = useState(0);
@@ -36,11 +37,27 @@ export const News = () => {
   return (
     <div className="news" id="news">
       <div className="news__main">
-        <img src={news[identifier].imgUrl} alt="" />
+        {identifier === news.length ? (
+          <video src={video} autoPlay />
+        ) : (
+          <img src={news[identifier].imgUrl} alt="" />
+        )}
         <div className="info">
-          <h4>{news[identifier].title}</h4>
-          <p>{news[identifier].desc}</p>
-          <a target="_blank" rel="noreferrer" href={news[identifier].href}>
+          <h4>
+            {identifier !== news.length
+              ? news[identifier].title
+              : "Doble cubrebocas"}
+          </h4>
+          <p>
+            {identifier !== news.length
+              ? news[identifier].desc
+              : "Usar doble cubrebocas para la proteccion contra covid hasta en un 96%"}
+          </p>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={identifier !== news.length ? news[identifier].href : ""}
+          >
             Ver Completo
           </a>
         </div>
@@ -56,6 +73,16 @@ export const News = () => {
             </div>
           </li>
         ))}
+        <li onClick={() => setIdentifier(news.length)}>
+          <video src={video} alt="main" />
+          <div className="info">
+            <h5>Doble cubrebocas</h5>
+            <p>
+              Usar doble cubrebocas para la proteccion contra covid hasta en un
+              96%
+            </p>
+          </div>
+        </li>
       </ul>
     </div>
   );
